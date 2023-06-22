@@ -1,9 +1,10 @@
+#ifndef __InstallService__
+#define __InstallService__
+
 #include <windows.h>
 #include <winsvc.h>
 #include <stdio.h>
 
-
-#define SVCNAME TEXT("SvcName")
 
 bool InstallService(LPCSTR lpServiceName) {
   SC_HANDLE schManager(nullptr);
@@ -52,3 +53,5 @@ bool InstallService(LPCSTR lpServiceName) {
 
   return true;
 }
+
+#endif

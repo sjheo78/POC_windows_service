@@ -1,3 +1,6 @@
+#ifndef __DeleteService__
+#define __DeleteService__
+
 #include <windows.h>
 #include <winsvc.h>
 #include <stdio.h>
@@ -38,3 +41,5 @@ bool DeleteService(LPCSTR lpServiceName) {
 
   return true;
 }
+
+#endif

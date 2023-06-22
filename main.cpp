@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include ".\InstallService.cpp"
-#include ".\DeleteService.cpp"
+#include "InstallService.h"
+#include "DeleteService.h"
 
 int main() {
   LPCSTR serviceName = "A_test_service";
