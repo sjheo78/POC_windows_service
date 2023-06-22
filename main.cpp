@@ -1,28 +1,12 @@
-#include <iostream>
-
-using namespace std;
-
-void install_service() {
-  return;
-}
-
-void uninstall_service() {
-  return;
-}
-
-void run_service() {
-  return;
-}
-
-void stop_service() {
-  return;
-}
+#include <stdio.h>
+#include ".\InstallService.cpp"
+#include ".\DeleteService.cpp"
 
 int main() {
-  install_service();
-  uninstall_service();
-  run_service();
-  stop_service();
+  LPCSTR serviceName = "A_test_service";
+
+  InstallService(serviceName);
+  DeleteService(serviceName);
 
   return 0;
 }
