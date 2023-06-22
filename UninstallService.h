@@ -1,15 +1,14 @@
-#ifndef __DeleteService__
-#define __DeleteService__
+#ifndef __UninstallService__
+#define __UninstallService__
 
 #include <windows.h>
 #include <winsvc.h>
 #include <stdio.h>
 
 
-bool DeleteService(LPCSTR lpServiceName) {
+bool UninstallService(LPCSTR lpServiceName) {
   SC_HANDLE schManager;
   SC_HANDLE schService;
-  TCHAR szPath[MAX_PATH];
 
   schManager = OpenSCManager(NULL, NULL, SC_MANAGER_ALL_ACCESS);
 
