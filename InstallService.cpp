@@ -52,11 +52,3 @@ bool InstallService(LPCSTR lpServiceName) {
 
   return true;
 }
-
-int main() {
-  if(!InstallService("A_test_service")) {
-    printf("Failed install service");
-  }
-
-  return 0;
-}
